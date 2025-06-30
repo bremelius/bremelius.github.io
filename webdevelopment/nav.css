@@ -1,31 +1,60 @@
-/* nav.css */
 nav {
-  background-color: #030303; /* Dark background for the nav bar */
-  padding: 10px; /* Add some padding around the nav bar */
+  background-color: #030303;
+  padding: 10px;
 }
 
 nav ul {
-  list-style-type: none; /* Remove the default bullet points */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  display: flex; /* Use flexbox to create a horizontal layout */
-  justify-content: space-around; /* Space out the list items evenly */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav li {
-  margin: 0 15px; /* Add space between each list item */
+  margin: 0 15px;
+  position: relative;
 }
 
 nav a {
-  text-decoration: none; /* Remove underline from links */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Add padding around the links */
-  display: block; /* Make the links block elements */
-  border: 2px solid transparent; /* Initially no border */
-  border-radius: 5px; /* Round the corners of the links */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
 
 nav a:hover {
-  background-color: #cf202e; /* Green background on hover */
-  border-color: #cf202e; /* Green border on hover */
+  background-color: #cf202e;
+  border-color: #cf202e;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #030303;
+  min-width: 180px;
+  z-index: 1;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid #444;
+}
+
+nav ul li ul li a:hover {
+  background-color: #cf202e;
 }
