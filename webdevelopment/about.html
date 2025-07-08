@@ -1,20 +1,19 @@
 <!--
-***************************************************************************** 
+*****************************************************************************
 
 Title:  About Page
 
-Use:  To teach users about Ben Remelius, the creator of the website.
+Use:    To teach users about Ben Remelius, the creator of the website.
 
-Author:  Ben Remelius
+Author: Ben Remelius
 
-School/Term:  University of Missouri, Summer 2025
+School/Term: University of Missouri, Summer 2025
 
 Developed: July 7, 2025
 
 Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
 
-******************************************************************************
-
+*****************************************************************************
 -->
 
 <!DOCTYPE html>
@@ -33,13 +32,14 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
   </header>
 
   <nav>
-    <ul>
+    <span class="mobile-toggle" onclick="toggleMenu()">&#9776;</span>
+    <ul id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="reflection.html">Reflection</a></li>
       <li><a href="#contact.html">Contact</a></li>
       <li><a href="#">Projects</a>
-        <ul>
+        <ul class="mobile-hide">
           <li><a href="about.html">About</a></li>
           <li><a href="reflection.html">Reflection</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -82,6 +82,13 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
     <p>Ben Remelius - bprbq5@umsystem.edu</p>
     <p>&copy; 2025 Ben Remelius. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("open");
+    }
+  </script>
 
 </body>
 </html>
