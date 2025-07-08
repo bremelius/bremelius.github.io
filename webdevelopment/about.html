@@ -29,51 +29,61 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
 <body>
 
   <header>
-    <h1>Ben Remelius</h1>
+    <h1>About Me</h1>
   </header>
 
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
       <li><a href="reflection.html">Reflection</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
+      <li><a href="#contact.html">Contact</a></li>
+      <li><a href="#">Projects</a>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
   <main class="about-grid">
-    <div class="left-column">
-      <img src="headshot.png" alt="Ben Remelius Headshot" class="headshot">
 
-      <section class="education">
-        <h2>Education</h2>
-        <hr>
-        <p>I graduated in May of 2023 with my Bachelor of Science in Statistics from the University of Missouri.</p>
-        <p>I am currently pursuing a Master of Business Administration, also from the University of Missouri, with an expected date of graduation of December of 2026.</p>
-      </section>
-    </div>
-
+    <!-- Right Column: About & Video -->
     <div class="right-column">
       <section class="about-text">
         <h2>About Me</h2>
         <hr>
-        <p>I’m Ben Remelius, a marketing leader and data analyst in the world of sports. From collegiate athletics to summer league baseball, I’ve helped organizations grow attendance, merchandise sales, and community visibility. Currently, I serve as Assistant Athletic Director for Marketing and Promotions at the University of Central Missouri, where I lead strategy for branding, digital media, and fan engagement across 17 varsity sports. I also founded You Might Know Sports, a digital marketing and analytics consultancy, and have created content for teams across the country.</p>
+        <p>I'm <strong>Ben Remelius</strong>, a marketing leader and storyteller in the world of sports. From collegiate athletics to summer league baseball, I’ve helped organizations grow attendance, merchandise sales, and community visibility. Currently, I serve as Assistant Athletic Director for Marketing and Promotions at the University of Central Missouri, where I lead strategy for branding, digital media, and fan engagement across 17 varsity sports. I also founded You Might Know Sports, a digital marketing and analytics consultancy, and have created content for teams across the country. I’m passionate about <em>creative</em> solutions that blend data with storytelling.</p>
       </section>
 
-      <div class="resume-video">
+      <section class="resume-video">
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" title="Resume Video" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </section>
+    </div>
+
+    <!-- Left Column: Photo & Education -->
+    <div class="left-column">
+      <img src="headshot.jpg" alt="Professional headshot of Ben Remelius" class="headshot">
+
+      <section class="education">
+        <h2>Education</h2>
+        <hr>
+        <p>I graduated in May of 2023 with my Bachelor of Science in Statistics from the University of Missouri.<br><br>
+        I am currently pursuing a Master of Business Administration, also from the University of Missouri, with an expected date of graduation of December 2026.</p>
+      </section>
     </div>
   </main>
 
   <div class="quote">
-    <blockquote>"Success is the sum of small efforts, repeated day in and day out."<br>- Robert Collier</blockquote>
+    <p>"Success is the sum of small efforts, repeated day in and day out."<br>– Robert Collier</p>
   </div>
 
   <footer>
     <p>Ben Remelius - bprbq5@umsystem.edu</p>
     <p>&copy; 2025 Ben Remelius. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

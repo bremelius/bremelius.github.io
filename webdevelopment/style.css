@@ -1,23 +1,32 @@
+/* Global page background */
+body {
+  background-image: url('your-texture.png'); /* Use your actual background texture file */
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
 h1 {
   color: #cf202e;
+  text-align: center;
 }
 
-.first-letter {
-  font-size: 2em;
-  font-weight: bold;
-  color: #cf202e;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-main p:not(:first-of-type) {
-  text-indent: 30px;
+hr {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-main p {
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #f9f9f9;
-}
-
+/* Layout grid */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -29,30 +38,32 @@ main p {
 .left-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Image and video */
 .headshot {
-  max-width: 100%;
+  max-width: 200px;
   border-radius: 8px;
   margin-bottom: 2rem;
 }
 
-.education h2,
-.about-text h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.resume-video iframe {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
 }
 
-.education hr,
-.about-text hr {
-  border: 1px solid black;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.resume-video {
-  margin-top: 2rem;
+/* Text formatting */
+main p {
+  padding: 10px;
+  margin: 10px 0;
 }
 
 .quote {
@@ -62,6 +73,7 @@ main p {
   font-size: 1.1rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
