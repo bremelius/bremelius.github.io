@@ -9,9 +9,9 @@ Author:  Ben Remelius
 
 School/Term:  University of Missouri, Summer 2025
 
-Developed: June 29, 2025
+Developed: July 7, 2025
 
-Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
+Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
@@ -21,6 +21,7 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ben Remelius Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
@@ -28,40 +29,47 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
 <body>
 
   <header>
-    <h1>About Me</h1>
+    <h1>Ben Remelius</h1>
   </header>
 
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
       <li><a href="reflection.html">Reflection</a></li>
-      <li><a href="#contact.html">Contact</a></li>
-      
-      <li><a href="#">Projects</a>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="reflection.html">Reflection</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </li>
+      <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </nav>
 
-  <main>
-    <h3>Assistant Athletic Director, Marketing and Promotions</h3>
+  <main class="about-grid">
+    <div class="left-column">
+      <img src="headshot.png" alt="Ben Remelius Headshot" class="headshot">
 
-    <p>I'm <strong>Ben Remelius</strong>, a marketing leader and storyteller in the world of sports. From collegiate athletics to summer league baseball, I’ve helped organizations grow attendance, merchandise sales, and community visibility.<br>
-    Currently, I serve as Assistant Athletic Director for Marketing and Promotions at the University of Central Missouri, where I lead strategy for branding, digital media, and fan engagement across 17 varsity sports. I also founded You Might Know Sports, a digital marketing and analytics consultancy, and have created content for teams across the country. I’m passionate about <em>creative</em> solutions that blend data with storytelling.</p>
+      <section class="education">
+        <h2>Education</h2>
+        <hr>
+        <p>I graduated in May of 2023 with my Bachelor of Science in Statistics from the University of Missouri.</p>
+        <p>I am currently pursuing a Master of Business Administration, also from the University of Missouri, with an expected date of graduation of December of 2026.</p>
+      </section>
+    </div>
 
-    <p>Education Overview:<br>
-    Master of Business Administration, University of Missouri <em>(Expected 2026)</em>.<br>
-    B.S. in Statistics, University of Missouri <em>(2023)</em>.</p>
+    <div class="right-column">
+      <section class="about-text">
+        <h2>About Me</h2>
+        <hr>
+        <p>I’m Ben Remelius, a marketing leader and data analyst in the world of sports. From collegiate athletics to summer league baseball, I’ve helped organizations grow attendance, merchandise sales, and community visibility. Currently, I serve as Assistant Athletic Director for Marketing and Promotions at the University of Central Missouri, where I lead strategy for branding, digital media, and fan engagement across 17 varsity sports. I also founded You Might Know Sports, a digital marketing and analytics consultancy, and have created content for teams across the country.</p>
+      </section>
 
-    <blockquote>"Success is the sum of small efforts, repeated day in and day out." - Robert Collier</blockquote>
-
-    <p><a href="remeliusresume.pdf" class="resume-link" target="_blank">Download My Resume</a></p>
+      <div class="resume-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" title="Resume Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
   </main>
+
+  <div class="quote">
+    <blockquote>"Success is the sum of small efforts, repeated day in and day out."<br>- Robert Collier</blockquote>
+  </div>
 
   <footer>
     <p>Ben Remelius - bprbq5@umsystem.edu</p>

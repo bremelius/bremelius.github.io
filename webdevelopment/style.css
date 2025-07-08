@@ -17,3 +17,64 @@ main p {
   margin: 10px 0;
   background-color: #f9f9f9;
 }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.education h2,
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education hr,
+.about-text hr {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.resume-video {
+  margin-top: 2rem;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column,
+  .right-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .resume-video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
