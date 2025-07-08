@@ -10,9 +10,9 @@ Author:  Ben Remelius
 
 School/Term:  University of Missouri, Summer 2025
 
-Developed: June 29, 2025
+Developed: July 7, 2025
 
-Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
+Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
@@ -22,6 +22,7 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ben Remelius Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
@@ -33,14 +34,14 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
   </header>
 
   <nav>
-    <ul>
+    <span class="mobile-toggle" onclick="toggleMenu()">&#9776;</span>
+    <ul id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="reflection.html">Reflection</a></li>
       <li><a href="#contact.html">Contact</a></li>
-      
       <li><a href="#">Projects</a>
-        <ul>
+        <ul class="mobile-hide">
           <li><a href="about.html">About</a></li>
           <li><a href="reflection.html">Reflection</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -49,14 +50,28 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.
     </ul>
   </nav>
 
-  <main>
-    <p>Welcome! Thanks for visiting my professional portfolio site.</p>
-    <p>This website is a curated space to showcase my work in sports marketing, brand storytelling, and live event production. The goal is to present a comprehensive view of my career in athletics. From strategic planning and social media campaigns to ticketing growth and team leadership. Through projects, reflections, and personal insights, I aim to highlight the creativity and data literacy I bring to every initiative. I want this site to not only be a snapshot of what I’ve done, but a glimpse into how I think. I hope it inspires future collaborations or career opportunities with others who share a passion for impactful sports experiences.</p>
+  <main class="container">
+    <div class="content-box">
+      <img src="IMG_8189.jpg" alt="Ben Remelius in action" class="home-photo">
+    </div>
+
+    <div class="content-box">
+      <p>Welcome! Thanks for visiting my professional portfolio site.</p>
+      <p>This website is a curated space to showcase my work in sports marketing, brand storytelling, and live event production. The goal is to present a comprehensive view of my career in athletics. From strategic planning and social media campaigns to ticketing growth and team leadership. Through projects, reflections, and personal insights, I aim to highlight the creativity and data literacy I bring to every initiative. I want this site to not only be a snapshot of what I’ve done, but a glimpse into how I think. I hope it inspires future collaborations or career opportunities with others who share a passion for impactful sports experiences.</p>
+    </div>
   </main>
 
   <footer>
     <p>Ben Remelius - bprbq5@umsystem.edu</p>
     <p>&copy; 2025 Ben Remelius. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("open");
+    }
+  </script>
+
 </body>
 </html>
