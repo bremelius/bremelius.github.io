@@ -1,18 +1,19 @@
-/* Global page background */
+/* ========== Global Styles ========== */
+
 body {
-  background-image: url('your-texture.png'); /* Use your actual background texture file */
-  background-size: cover;
+  margin: 0;
+  font-family: Georgia, serif;
+  background-image: url('Paper-Texture-5.jpg');
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: Georgia, serif;
-  margin: 0;
-  padding: 0;
+  background-size: cover;
+  color: #000;
 }
 
-/* Headings */
 h1 {
   color: #cf202e;
   text-align: center;
+  margin: 1.5rem 0;
 }
 
 h2 {
@@ -26,44 +27,53 @@ hr {
   width: 100%;
 }
 
-/* Layout grid */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
-  align-items: start;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 
-.right-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.headshot-container {
+  flex: 0 0 auto;
 }
 
-/* Image and video */
 .headshot {
   max-width: 200px;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 2rem;
+}
+
+.about-text,
+.education,
+.resume-video {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.about-text p,
+.education p {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-text p:not(:first-of-type),
+.education p:not(:first-of-type) {
+  text-indent: 30px;
 }
 
 .resume-video iframe {
-  max-width: 100%;
-  height: auto;
-  margin-top: 1rem;
-}
-
-/* Text formatting */
-main p {
-  padding: 10px;
-  margin: 10px 0;
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 6px;
 }
 
 .quote {
@@ -71,22 +81,43 @@ main p {
   font-style: italic;
   margin: 2rem;
   font-size: 1.1rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #000;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
 
-  .left-column,
-  .right-column {
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .resume-video iframe {
+  .headshot {
+    max-width: 150px;
+  }
+
+  .about-text,
+  .education,
+  .resume-video {
     width: 100%;
-    height: auto;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
