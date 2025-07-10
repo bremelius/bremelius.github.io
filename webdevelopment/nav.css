@@ -1,15 +1,6 @@
 nav {
   background-color: #030303;
   padding: 10px;
-  position: relative;
-}
-
-.mobile-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
 }
 
 nav ul {
@@ -35,7 +26,8 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   background-color: #cf202e;
   border-color: #cf202e;
 }
@@ -69,9 +61,23 @@ nav ul li ul li a:hover {
   background-color: #cf202e;
 }
 
-/* ========== Mobile Navigation ========== */
+/* Mobile Navigation */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #030303;
+  border: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .mobile-toggle {
+  .hamburger {
     display: block;
   }
 
@@ -79,24 +85,19 @@ nav ul li ul li a:hover {
     display: none;
     flex-direction: column;
     background-color: #030303;
-    width: 100%;
   }
 
-  nav ul.open {
+  #menu-toggle:checked + .hamburger + nav ul {
     display: flex;
   }
 
-  nav li {
+  nav ul li {
+    width: 100%;
+    text-align: center;
     margin: 0;
   }
 
-  nav ul li ul,
-  .mobile-hide {
+  nav ul li ul.mobile-hide {
     display: none;
-  }
-
-  nav ul li a {
-    padding: 15px;
-    border-bottom: 1px solid #222;
   }
 }

@@ -1,18 +1,11 @@
 <!--
 *****************************************************************************
-
-Title:  Reflection
-
+Title:  Reflection Page
 Use:    To share my professional goals and philosophies.
-
 Author: Ben Remelius
-
 School/Term: University of Missouri, Summer 2025
-
 Developed: July 7, 2025
-
 Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
-
 *****************************************************************************
 -->
 
@@ -20,7 +13,7 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reflection - Ben Remelius</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
@@ -31,8 +24,10 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
     <h1>Personal Reflection</h1>
   </header>
 
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+
   <nav>
-    <span class="mobile-toggle" onclick="toggleMenu()">&#9776;</span>
     <ul id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -49,30 +44,18 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.
   </nav>
 
   <main class="container">
-    <div class="about-text">
+
+    <div class="content-box">
       <h2>Career Reflection</h2>
-      <hr>
-      <p><span class="first-letter">M</span>y career journey in sports marketing and management has been an exciting and ever-evolving experience. From working with collegiate athletics to minor league baseball teams, each role has shaped my approach to fan engagement, branding, and digital media strategies. My experiences have reinforced my commitment to the power of creative storytelling and data-driven decisions in the sports world.</p>
-
-      <p><span class="first-letter">O</span>ne of my key goals has always been to blend my technical skills with my passion for the sports industry. I strive to create marketing campaigns that not only engage fans but also tell a compelling story that resonates with them. I believe in constantly adapting to new technologies and methodologies to stay ahead in an increasingly digital landscape.</p>
-
-      <p><span class="first-letter">L</span>ooking ahead, I envision further advancing in my career by taking on leadership roles in sports marketing and continuing to refine my expertise in data analysis and digital media strategies. I aim to be a key player in shaping the future of sports marketing, pushing boundaries, and creating meaningful fan experiences that go beyond the traditional game-day activities.</p>
-
-      <p><span class="first-letter">T</span>hroughout my career, I’ve learned that the key to success lies in collaboration, constant learning, and staying true to one’s passions. As I continue to grow, I hope to mentor others in the field and inspire them to pursue their own passions, just as I have been fortunate to do.</p>
+      <p><span class="first-letter">M</span>y career journey in sports marketing and management has been an exciting and ever-evolving experience. From working with collegiate athletics to minor league baseball teams, each role has shaped my approach to fan engagement, branding, and digital media strategies. My experiences have reinforced my commitment to the power of creative storytelling and data-driven decisions in the sports world. One of my key goals has always been to blend my technical skills with my passion for the sports industry. I strive to create marketing campaigns that not only engage fans but also tell a compelling story that resonates with them. I believe in constantly adapting to new technologies and methodologies to stay ahead in an increasingly digital landscape. Looking ahead, I envision further advancing in my career by taking on leadership roles in sports marketing and continuing to refine my expertise in data analysis and digital media strategies. I aim to be a key player in shaping the future of sports marketing, pushing boundaries, and creating meaningful fan experiences that go beyond the traditional game-day activities. Throughout my career, I’ve learned that the key to success lies in collaboration, constant learning, and staying true to one’s passions. As I continue to grow, I hope to mentor others in the field and inspire them to pursue their own passions, just as I have been fortunate to do.</p>
     </div>
+
   </main>
 
   <footer>
     <p>Ben Remelius - bprbq5@umsystem.edu</p>
     <p>&copy; 2025 Ben Remelius. All rights reserved.</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("nav-menu");
-      menu.classList.toggle("open");
-    }
-  </script>
 
 </body>
 </html>
