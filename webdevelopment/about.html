@@ -17,18 +17,19 @@ Tested:  July 9, 2025; Passed on Firefox and Chrome browsers.
   <title>Ben Remelius Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <h1>About Me</h1>
+    <h1>Ben Remelius</h1>
   </header>
 
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" class="hamburger">&#9776;</label>
 
   <nav>
-    <ul id="nav-menu">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="reflection.html">Reflection</a></li>
@@ -44,7 +45,6 @@ Tested:  July 9, 2025; Passed on Firefox and Chrome browsers.
   </nav>
 
   <main class="container">
-
     <section class="about-row top-row">
       <div class="headshot-container">
         <img src="headshot.png" alt="Professional headshot of Ben Remelius" class="headshot">
@@ -60,8 +60,11 @@ Tested:  July 9, 2025; Passed on Firefox and Chrome browsers.
       <div class="education">
         <h2>Education</h2>
         <hr>
-        <p>I graduated in May of 2023 with my Bachelor of Science in Statistics from the University of Missouri.<br><br>
-        I am currently pursuing a Master of Business Administration, also from the University of Missouri, with an expected date of graduation of December 2026.</p>
+        <ul class="education-list">
+          <li>B.S. in Statistics, University of Missouri – 2023</li>
+          <li>MBA (in progress), University of Missouri – Expected 2026</li>
+          <li>Professional coursework in digital marketing, analytics, and UX design</li>
+        </ul>
       </div>
 
       <div class="resume-video">
@@ -69,10 +72,9 @@ Tested:  July 9, 2025; Passed on Firefox and Chrome browsers.
       </div>
     </section>
 
-    <div class="quote">
-      <p>"Success is the sum of small efforts, repeated day in and day out."<br>- Robert Collier</p>
-    </div>
-
+    <blockquote class="quote">
+      "Success is the sum of small efforts, repeated day in and day out." – Robert Collier
+    </blockquote>
   </main>
 
   <footer>
