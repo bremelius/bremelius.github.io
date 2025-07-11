@@ -203,3 +203,23 @@ footer {
     max-width: 100%;
   }
 }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #000;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  background-image: url('footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
