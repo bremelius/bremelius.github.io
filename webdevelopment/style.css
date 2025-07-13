@@ -124,6 +124,10 @@ footer {
   color: white;
   font-size: 0.9rem;
   margin-top: 2rem;
+  background-image: url('footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .first-letter {
@@ -132,7 +136,6 @@ footer {
   color: #cf202e;
 }
 
-/* Mobile Responsive Layout */
 @media (max-width: 768px) {
   .about-row {
     flex-direction: column;
@@ -209,17 +212,9 @@ footer {
   height: 20px;
   vertical-align: middle;
   margin-right: 8px;
+  transition: transform 0.3s ease;
 }
 
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #000;
-  color: white;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  background-image: url('footer-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.icon:hover {
+  transform: scale(1.25);
 }
