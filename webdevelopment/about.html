@@ -17,6 +17,7 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.
   <title>Ben Remelius Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -24,23 +25,20 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.
     <h1>About Me</h1>
   </header>
 
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+
   <nav>
-    <ul>
+    <ul id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="reflection.html">Reflection</a></li>
-      <li><a href="#contact.html">Contact</a></li>
-      <li><a href="#">Projects</a>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="reflection.html">Reflection</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </li>
+      <li><a href="projects.html">Projects</a></li>
     </ul>
   </nav>
 
   <main class="container">
+
     <section class="about-row top-row">
       <div class="headshot-container">
         <img src="headshot.png" alt="Professional headshot of Ben Remelius" class="headshot">
@@ -49,6 +47,7 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.
         <h2>About Me</h2>
         <hr>
         <p>I'm <strong>Ben Remelius</strong>, a marketing leader and storyteller in the world of sports. From collegiate athletics to summer league baseball, I’ve helped organizations grow attendance, merchandise sales, and community visibility. Currently, I serve as Assistant Athletic Director for Marketing and Promotions at the University of Central Missouri, where I lead strategy for branding, digital media, and fan engagement across 17 varsity sports. I also founded You Might Know Sports, a digital marketing and analytics consultancy, and have created content for teams across the country. I’m passionate about <em>creative</em> solutions that blend data with storytelling.</p>
+        <p><a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
       </div>
     </section>
 
@@ -71,6 +70,7 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.
     <blockquote class="quote">
       "Success is the sum of small efforts, repeated day in and day out."<br>– Robert Collier
     </blockquote>
+
   </main>
 
   <footer>
