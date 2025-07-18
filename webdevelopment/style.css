@@ -321,3 +321,7 @@ footer {
     padding: 0.5rem;
   }
 }
+
+.project-table tr:last-child {
+  color: black;
+}
