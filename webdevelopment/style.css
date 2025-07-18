@@ -323,5 +323,6 @@ footer {
 }
 
 .project-table tr:last-child {
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
