@@ -385,3 +385,7 @@ footer {
     text-align: center;
   }
 }
+
+.project-table tbody tr:last-child td {
+  font-weight: normal;
+}
