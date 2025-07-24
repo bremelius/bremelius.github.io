@@ -392,3 +392,51 @@ footer {
 .project-table tbody tr:last-child td {
   font-weight: normal;
 }
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-logo,
+.project-img {
+  flex: 1 1 150px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.project-logo img,
+.project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-text {
+  flex: 2 1 400px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;
+  }
+
+  .project-logo,
+  .project-img {
+    max-width: 80%;
+  }
+
+  .project-text {
+    max-width: 90%;
+  }
+}
