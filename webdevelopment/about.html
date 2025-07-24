@@ -30,10 +30,18 @@ Tested:  July 20, 2025; Passed on Firefox and Chrome browsers.
 
   <nav>
     <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="reflection.html">Reflection</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li class="dropdown">
+        <a href="projects.html">Experiences</a>
+        <ul class="dropdown-menu mobile-hide">
+          <li><a href="#ucm">UCM Athletics</a></li>
+          <li><a href="#macon">Macon Bacon</a></li>
+          <li><a href="#elias">Elias Sports Bureau</a></li>
+          <li><a href="#ymk">You Might Know Sports</a></li>
+        </ul>
+      </li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>

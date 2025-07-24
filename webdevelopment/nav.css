@@ -61,7 +61,6 @@ nav ul li ul li a:hover {
   background-color: #cf202e;
 }
 
-/* Mobile Navigation */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -97,7 +96,11 @@ nav ul li ul li a:hover {
     margin: 0;
   }
 
-  nav ul li ul.mobile-hide {
-    display: none;
+  nav ul li:hover > ul {
+    display: none !important;
+  }
+
+  .dropdown-menu.mobile-hide {
+    display: none !important;
   }
 }
